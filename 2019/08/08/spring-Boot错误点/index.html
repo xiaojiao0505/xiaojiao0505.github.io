@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="spring Boot出现错误1.测试持久层代码是报“java.lang.IllegalStateException: Failed to load ApplicationContext”异常 原因：xml映射文件错误 解决方案：查询异常的第一个“Caused by:”提示，末尾会写出异常原因如： “ Cause: java.lang.ClassNotFoundException: Cannot">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-08T11:04:39.092Z">
+<meta property="og:updated_time" content="2019-08-08T11:22:36.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring Boot错误点">
 <meta name="twitter:description" content="spring Boot出现错误1.测试持久层代码是报“java.lang.IllegalStateException: Failed to load ApplicationContext”异常 原因：xml映射文件错误 解决方案：查询异常的第一个“Caused by:”提示，末尾会写出异常原因如： “ Cause: java.lang.ClassNotFoundException: Cannot">
@@ -179,7 +179,7 @@
 <p>解决方案：查询异常的第一个“Caused by:”提示，末尾会写出异常原因如：</p>
 <p>“ Cause: java.lang.ClassNotFoundException: Cannot find class: cn.tedu.store.entity.District;”</p>
 <p>异常提示未找到“cn.tedu.store.entity.District”类，在xml文件中相应位置发现</p>
-<p>“<select id="findByParent" resulttype="cn.tedu.store.entity.District；">”</select></p>
+<p>“《select id=”findByParent” resultType= “cn.tedu.store.entity.District；”》”</p>
 <p>属性resultType中填写返回值类型所在的位置，多出一个“；”导致找不到该地址；</p>
 
       
